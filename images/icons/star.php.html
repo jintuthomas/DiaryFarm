@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost/star/star.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="./star.php_files/font-awesome.min.css">
+<style>
+
+</style>
+
+<script src="./star.php_files/jquery.min.js.download"></script>
+<script>
+$(document).ready(function(){
+  $("p1").mouseover(function(){
+    $("p1").css("color", "yellow");
+  });
+  $("p1").mouseout(function(){
+    $("p1").css("color", "lightgray");
+  });
+  $("p2").mouseover(function(){
+    $("p2").css("color", "yellow");
+  });
+  $("p2").mouseout(function(){
+    $("p2").css("color", "lightgray");
+  });
+  $("p3").mouseover(function(){
+    $("p3").css("color", "yellow");
+  });
+  $("p3").mouseout(function(){
+    $("p3").css("color", "lightgray");
+  });
+  $("p4").mouseover(function(){
+    $("p4").css("color", "yellow");
+  });
+  $("p4").mouseout(function(){
+    $("p4").css("color", "lightgray");
+  });
+  $("p5").mouseover(function(){
+    $("p5").css("color", "yellow");
+  });
+  $("p5").mouseout(function(){
+    $("p5").css("color", "lightgray");
+  });
+});
+  
+
+
+function ContentPage(id){
+    location.href = "show.php?id="+id;
+}
+</script>
+
+</head>
+<body>
+
+<h2>Star Rating</h2>
+<p class="fa fa-star" style="color:lightgray;" id="0" onclick="ContentPage(this.id)" value=".$id."></p>
+<p class="fa fa-star" style="color:lightgray;" id="1" onclick="ContentPage(this.id)" value=".$id."></p>
+<p class="fa fa-star" style="color:lightgray;" id="2" onclick="ContentPage(this.id)" value=".$id."></p>
+<p class="fa fa-star" style="color:lightgray;" id="3" onclick="ContentPage(this.id)" value=".$id."></p>
+<p class="fa fa-star" style="color:lightgray;" id="4" onclick="ContentPage(this.id)" value=".$id."></p>
+<!--$passedId = $_GET['id'];-->
+
+
+</body></html>
